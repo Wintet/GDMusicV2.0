@@ -1,0 +1,126 @@
+body{
+   background-color: black ;
+    
+}
+.bh{
+    position: relative;
+    top: 180px;
+    width: 500px;
+    left: 500px;
+
+    animation-name: GD;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+  }
+  
+  @-webkit-keyframes GD {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  @-o-keyframes GD {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  @-moz-keyframes GD {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  @keyframes GD {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+
+
+#circlecnv{
+    z-index: -1;
+    padding: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+}
+.topBar{
+    position: absolute;
+    padding: 0;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    color: white;
+}
+#topcnv{
+    z-index: -1;
+    position: absolute;
+    z-index: -1;
+    padding: 0;
+    display: block;
+    top: 0;
+    left: 0;
+    margin:auto;
+    opacity: .65;
+}
+.visualizer{
+    width: 1690px;
+    height: 350px;
+    padding: 0;
+    display: block;
+    position: fixed;
+    top: 404px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+}
+
+.atuin-btn {
+    display: inline-flex;
+    margin: 10px;
+    text-decoration: none;
+    position: relative;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 12px 30px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase; 
+    font-family: 'Roboto', Тahoma, sans-serif;
+    background: #888888;
+    cursor: pointer; 
+    border: 2px solid #3a3a3a;
+}
+.atuin-btn:hover,
+.atuin-btn:active,
+.atuin-btn:focus {
+    color: #FFF;
+}
+.atuin-btn:after,
+.atuin-btn:before {
+    position: absolute;
+    height: 3px;
+    left: 50%;
+    background: #454545;
+    bottom: -6px;
+    content: "";
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+.atuin-btn:before {
+    top: -6px;
+}
+.atuin-btn:hover:after,
+.atuin-btn:hover:before,
+.atuin-btn:active:after,
+.atuin-btn:active:before,
+.atuin-btn:focus:after,
+.atuin-btn:focus:before {
+    width: 100%;
+    left: 0;
+}
